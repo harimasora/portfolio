@@ -35,7 +35,7 @@ export default function ContactForm() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        person_name: e.currentTarget.person_name.value,
+        person: e.currentTarget.person.value,
         email: e.currentTarget.email.value,
         company: e.currentTarget.company.value,
         message: e.currentTarget.message.value,
@@ -58,7 +58,7 @@ export default function ContactForm() {
     <FadeIn className="mt-10">
       <form className="py-10" method="POST" onSubmit={handleSubmit}>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-gray-900/20">
-          <TextInput label="Name" name="person_name" autoComplete="name" required />
+          <TextInput label="Name" name="person" autoComplete="name" required />
           <TextInput label="Email" type="email" name="email" autoComplete="email" required />
           <TextInput label="Company" name="company" autoComplete="organization" required />
           <TextInput label="Message" name="message" required />

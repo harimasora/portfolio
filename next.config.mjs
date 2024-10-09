@@ -20,6 +20,7 @@ const nextConfig = {
   },
   experimental: {
     scrollRestoration: true,
+    serverComponentsExternalPackages: ["@react-email/render"],
   },
 };
 

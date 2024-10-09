@@ -10,6 +10,7 @@ import { CodeGroup } from './Code';
 import CollapsableMenu from './CollapsableMenu';
 import ContactForm from './ContactForm';
 import Container from './Container';
+import { EmailTemplate } from './EmailTemplate';
 import ExpandArrowLink from './ExpandArrowLink';
 import { FadeIn, FadeInStagger, Stagger } from './FadeIn';
 import GlowCard from './GlowCard';
@@ -39,6 +40,7 @@ export {
   CollapsableMenu,
   ContactForm,
   Container,
+  EmailTemplate,
   ExpandArrowLink,
   FadeIn,
   FadeInStagger,

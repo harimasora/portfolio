@@ -34,7 +34,6 @@
     "next-themes": "^0.2.1",
     "npm": "^10.1.0",
     "postcss": "8.4.28",
-    "postmark": "^3.1.1",
     "react": "18.2.0",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
@@ -45,6 +44,7 @@
     "react-redux": "^8.1.2",
     "remark": "^14.0.3",
     "remark-gfm": "^3.0.1",
+    "resend": "^4.0.0",
     "shiki": "^0.14.3",
     "tailwindcss": "3.3.3",
     "tsparticles-engine": "^2.12.0",
@@ -56,6 +56,6 @@
   "devDependencies": {
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.2"
   }
 }
