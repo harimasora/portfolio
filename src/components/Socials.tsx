@@ -24,8 +24,8 @@ function GitHubIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const socialMediaProfiles = [
-  { title: 'Linkedin', href: 'https://www.linkedin.com/in/jalejandrogomeze/', icon: LinkedinIcon },
-  { title: 'GitHub', href: 'https://github.com/AlejandroGomezE', icon: GitHubIcon },
+  { title: 'Linked.in', href: 'https://www.linkedin.com/in/danilo-rodrigues-5410ab124/', icon: LinkedinIcon },
+  { title: 'Github', href: 'https://github.com/harimasora', icon: GitHubIcon },
 ];
 
 export default function Socials({ className }: { className?: string; invert?: boolean }) {

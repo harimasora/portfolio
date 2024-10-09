@@ -30,16 +30,14 @@ export default function AnimatedTitle() {
     let hasCanceled_ = false;
     const animationActions = [
       { controller: web as AnimationControls, value: 'visible' },
+      { controller: web, value: 1000 },
+      { controller: web, value: 'hidden' },
       { controller: frontEnd, value: 'visible' },
-      { controller: web, value: 1000 },
+      { controller: frontEnd, value: 1000 },
       { controller: frontEnd, value: 'hidden' },
-      { controller: web, value: 'hidden' },
-      { controller: web, value: 700 },
-      { controller: web, value: 'visible' },
       { controller: backEnd, value: 'visible' },
-      { controller: web, value: 1000 },
+      { controller: backEnd, value: 1000 },
       { controller: backEnd, value: 'hidden' },
-      { controller: web, value: 'hidden' },
     ];
 
     const animateWords = async () => {
@@ -62,17 +60,18 @@ export default function AnimatedTitle() {
   }, [frontEnd, backEnd, web]);
 
   return (
-    <div className="flex text-blue-100">
+    <div className="flex text-blue-100 font-bold">
       <motion.div variants={list} initial="hidden" animate={web}>
-        <WriteWord word="Web" />
+        <WriteWord word="Mobile" />
       </motion.div>
-      <div className="text-transparent">a</div>
       <motion.div variants={list} initial="hidden" animate={frontEnd}>
-        <WriteWord word="Front-End" />
+        <WriteWord word="Frontend" />
       </motion.div>
       <motion.div variants={list} initial="hidden" animate={backEnd}>
-        <WriteWord word="Back-End" />
+        <WriteWord word="Backend" />
       </motion.div>
+      <div className="text-transparent">_</div>
+      <div>Development</div>
     </div>
   );
 }
